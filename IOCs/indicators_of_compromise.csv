@@ -1,1 +1,11 @@
-
+Indicator Type,Value,Description / Role
+Domain,attirenepal.com,Initial hosting domain for document.zip
+File Name,document.zip / chart-1530076591.xls,Malicious archive and spreadsheet payload
+Domain,finejewels.com.au,Secondary infrastructure domain
+Domain,thietbiagt.com,Secondary infrastructure domain
+Domain,new.americold.com,Secondary infrastructure domain
+IP / Domain,185.106.96.158 (survmeter.live),Cobalt Strike C2 Server 1
+IP / Domain,185.125.204.174 (securitybusinpuff.com),Cobalt Strike C2 Server 2
+Domain,maldivehost.net,Post-infection communication domain
+Domain,api.ipify.org,External IP check service
+Email,farshin@mailfa.com,Sender address used in malspam phase
