@@ -1,1 +1,14 @@
+# Network Forensics & Malware Analysis - Wireshark Filters
+# Use these filters to inspect the traffic capture stages.
 
+# 1. Initial Web Traffic & File Downloads (Part 1)
+http
+
+# 2. Inspecting Client Hello Packets & Hidden SNI Domains (TLS Handshakes)
+tls.handshake.type == 1
+
+# 3. Filtering External API Reconnaissance (e.g., ipify.org IP check)
+dns.qry.name contains "api"
+
+# 4. Analyzing Mail Spam Propagation & SMTP Frames (Part 2)
+smtp && frame contains "MAIL FROM"
